@@ -1,0 +1,82 @@
+@import './Variables.module.scss';
+
+.mainWrapper {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  margin: 0 auto;
+}
+
+.mainBody {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  transform-origin: right;
+  margin-left: auto;
+
+  transition: width 1s ease;
+  will-change: width;
+}
+
+.sideMenuOpen {
+  width: calc(100% - 400px);
+}
+
+.paginationButton {
+  padding: 5px 10px;
+  background: #fafafa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.07);
+}
+
+.loadingScreen {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  z-index: 2;
+}
+
+.paginationButton:hover {
+  background: #f4f4f4;
+}
+
+.chartContainer {
+  width: 100%;
+}
+
+.div1 {
+  width: 60%;
+}
+
+.div2 {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.div1,
+.div2 {
+  padding: 20px;
+}
+
+.hideElement {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .div1 {
+    width: 100%;
+  }
+
+  .div2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sideMenuOpen {
+    width: 100%;
+  }
+}

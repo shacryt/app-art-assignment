@@ -1,0 +1,21 @@
+@import '../Variables.module.scss';
+
+.wrapper {
+  width: 400px;
+  max-width: 90%;
+  height: calc(100vh - 50px);
+  margin-right: auto;
+  background-color: $side-menu-color-1;
+  position: absolute;
+
+  left: 0;
+  top: 50px;
+
+  transition: transform 1s ease;
+  will-change: transform;
+  z-index: 999;
+}
+
+.hideMenu {
+  transform: translateX(-100%);
+}

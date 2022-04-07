@@ -1,0 +1,191 @@
+@import './Variables.module.scss';
+
+html,
+body,
+#__next {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fl-row {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.fl-column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.fl-full-center {
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fl-division {
+  flex: 1;
+}
+
+.fl-wrap {
+  flex-wrap: wrap;
+}
+
+.fl-align-center {
+  align-items: center;
+}
+
+.fl-align-start {
+  align-items: flex-start;
+}
+
+.fl-align-end {
+  align-items: flex-end;
+}
+
+.fl-align-baseline {
+  align-items: baseline;
+}
+
+.fl-justify-start {
+  justify-content: flex-start;
+}
+
+.fl-justify-end {
+  justify-content: flex-end;
+}
+
+.fl-justify-baseline {
+  justify-content: baseline;
+}
+
+.fl-justify-center {
+  justify-content: center;
+}
+
+.fl-text-center {
+  text-align: center;
+}
+
+.fl-text-start {
+  text-align: start;
+}
+
+.fl-text-end {
+  text-align: end;
+}
+
+.fl-full-width {
+  width: 100%;
+}
+
+.fl-full-height {
+  height: 100%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  box-shadow: none;
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  word-break: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  border: 2px solid #f4f4f4;
+  border-collapse: collapse;
+}
+
+th {
+  opacity: 0.7;
+}
+
+th,
+td {
+  width: auto;
+  white-space: nowrap;
+  text-align: left;
+  padding-right: 15px;
+  height: 50px;
+  padding: 10px;
+
+  border-bottom: 2px solid #f4f4f4;
+  background-color: white;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr.tr-space > th {
+  padding-bottom: 25px;
+  background-color: #fafafa;
+}

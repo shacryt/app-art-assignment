@@ -1,0 +1,14 @@
+$primary-color: white;
+$primary-text-color: rgb(0, 0, 0);
+$background-color-1: #0f0f0f;
+$navbar-color-1: #344247;
+$side-menu-color-1: #c43e3e;
+$blue-1: #5500ff;
+
+:export {
+  primaryColor: $primary-color;
+  primaryTextColor: $primary-text-color;
+  blue1: $blue-1;
+  navbarColor1: $navbar-color-1;
+  sideMenuColor1: $side-menu-color-1;
+}
